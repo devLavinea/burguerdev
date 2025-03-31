@@ -11,6 +11,18 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 
+import hamb1 from "./images/hamb-1.png";
+import hamb2 from "./images/hamb-2.png";
+import hamb3 from "./images/hamb-3.png";
+import hamb4 from "./images/hamb-4.png";
+import hamb5 from "./images/hamb-5.png";
+import hamb6 from "./images/hamb-6.png";
+import hamb7 from "./images/hamb-7.png";
+import hamb8 from "./images/hamb-8.png";
+import refri1 from "./images/refri-1.png";
+import refri2 from "./images/refri-2.png";
+
+
 const App = () => {
   // Desestruturando o hook useCart para pegar as variáveis e funções necessárias
   const {
@@ -90,7 +102,7 @@ const App = () => {
       <div id="menu" className="lg:w-[80%] w-[98%] mb-[80px] pt-[50px] rounded-1xl">
         <main className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 mx-auto max-w-6xl px-2 mb-16">
           <ProductCardBurguer
-            image="./images/hamb-1.png"
+            image={hamb1}
             name="Smash Burger Deluxe"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial exclusivo."
             price="21.90"
@@ -100,7 +112,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-2.png"
+            image={hamb2}
             name="Hamburguer Smash"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial
               exclusivo."
@@ -110,7 +122,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-3.png"
+            image={hamb3}
             name="Veggie Delight Burger"
             description="Hambúrguer vegetal, queijo vegano, alface crocante, tomate e molho de mostarda e mel."
             price="29.90"
@@ -119,7 +131,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-4.png"
+            image={hamb4}
             name="Burguer da Casa"
             description="Hambúrguer artesanal com carne 100% bovina, queijo prato, cebola roxa e molho especial da casa."
             price="30.90"
@@ -128,7 +140,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-5.png"
+            image={hamb5}
             name="Smash Burger Crispy"
             description="Pão brioche, hambúrguer suculento, queijo cheddar derretido, cebola crocante e molho especial de mostarda."
             price="21.90"
@@ -137,7 +149,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-6.png"
+            image={hamb6}
             name="Double Cheese Supreme"
             description="Dois hambúrgueres grelhados, queijo cheddar, queijo muçarela derretido, bacon crocante e molho barbecue picante."
             price="24.90"
@@ -146,7 +158,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-7.png"
+            image={hamb7}
             name="Green Delight Burger"
             description="Hambúrguer de quinoa, abacate cremoso, alface crocante, tomate fresco e molho de limão e ervas."
             price="29.90"
@@ -155,7 +167,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="./images/hamb-8.png"
+            image={hamb8}
             name="House Special Burger"
             description="Hambúrguer artesanal com carne 100% bovina, queijo cheddar, cogumelos salteados e molho secreto da casa."
             price="30.90"
@@ -175,7 +187,7 @@ const App = () => {
           id="menu"
         >
           <ProductCardDrink
-            image="./images/refri-1.png"
+            image={refri1}
             name="Coca-Cola lata"
             price="6.00"
             onClick={() => addToCart("Coca-Cola lata", 6.0)}
@@ -183,7 +195,7 @@ const App = () => {
           />
 
           <ProductCardDrink
-            image="./images/refri-2.png"
+            image={refri2}
             name="Guaraná lata"
             price="6.00"
             onClick={() => addToCart("Guaraná lata", 6.0)}
