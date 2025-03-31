@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCartPlus } from 'react-icons/fa';
 
-const ProductCardBurguer = ({ image, name, description, price, onClick }) => {
+const ProductCardBurguer = ({ image, name, description, price, onClick,  }) => {
   
   return (
     <div className="flex gap-2 bg-neutral-900 text-white p-[15px] rounded-1xl">

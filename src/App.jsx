@@ -21,6 +21,7 @@ import hamb7 from "./images/hamb-7.png";
 import hamb8 from "./images/hamb-8.png";
 import refri1 from "./images/refri-1.png";
 import refri2 from "./images/refri-2.png";
+import burguer from "./images/burguer.png";
 
 
 const App = () => {
@@ -102,6 +103,7 @@ const App = () => {
       <div id="menu" className="lg:w-[80%] w-[98%] mb-[80px] pt-[50px] rounded-1xl">
         <main className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 mx-auto max-w-6xl px-2 mb-16">
           <ProductCardBurguer
+            
             image={hamb1}
             name="Smash Burger Deluxe"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial exclusivo."
@@ -259,7 +261,7 @@ const App = () => {
         </div>
         <img
           className="hidden md:block w-[350px] h-[300px] absolute right-0 bottom-12"
-          src="/src/images/burguer.png"
+          src={burguer}
           alt=""
         />
 
