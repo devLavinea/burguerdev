@@ -90,7 +90,7 @@ const App = () => {
       <div id="menu" className="lg:w-[80%] w-[98%] mb-[80px] pt-[50px] rounded-1xl">
         <main className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 mx-auto max-w-6xl px-2 mb-16">
           <ProductCardBurguer
-            image="/images/hamb-1.png"
+            image="./images/hamb-1.png"
             name="Smash Burger Deluxe"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial exclusivo."
             price="21.90"
@@ -100,7 +100,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-2.png"
+            image="./images/hamb-2.png"
             name="Hamburguer Smash"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial
               exclusivo."
@@ -110,7 +110,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-3.png"
+            image="./images/hamb-3.png"
             name="Veggie Delight Burger"
             description="Hambúrguer vegetal, queijo vegano, alface crocante, tomate e molho de mostarda e mel."
             price="29.90"
@@ -119,7 +119,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-4.png"
+            image="./images/hamb-4.png"
             name="Burguer da Casa"
             description="Hambúrguer artesanal com carne 100% bovina, queijo prato, cebola roxa e molho especial da casa."
             price="30.90"
@@ -128,7 +128,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-5.png"
+            image="./images/hamb-5.png"
             name="Smash Burger Crispy"
             description="Pão brioche, hambúrguer suculento, queijo cheddar derretido, cebola crocante e molho especial de mostarda."
             price="21.90"
@@ -137,7 +137,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-6.png"
+            image="./images/hamb-6.png"
             name="Double Cheese Supreme"
             description="Dois hambúrgueres grelhados, queijo cheddar, queijo muçarela derretido, bacon crocante e molho barbecue picante."
             price="24.90"
@@ -146,7 +146,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-7.png"
+            image="./images/hamb-7.png"
             name="Green Delight Burger"
             description="Hambúrguer de quinoa, abacate cremoso, alface crocante, tomate fresco e molho de limão e ervas."
             price="29.90"
@@ -155,7 +155,7 @@ const App = () => {
           />
 
           <ProductCardBurguer
-            image="/images/hamb-8.png"
+            image="./images/hamb-8.png"
             name="House Special Burger"
             description="Hambúrguer artesanal com carne 100% bovina, queijo cheddar, cogumelos salteados e molho secreto da casa."
             price="30.90"
@@ -175,7 +175,7 @@ const App = () => {
           id="menu"
         >
           <ProductCardDrink
-            image="/images/refri-1.png"
+            image="./images/refri-1.png"
             name="Coca-Cola lata"
             price="6.00"
             onClick={() => addToCart("Coca-Cola lata", 6.0)}
@@ -183,7 +183,7 @@ const App = () => {
           />
 
           <ProductCardDrink
-            image="/images/refri-2.png"
+            image="./images/refri-2.png"
             name="Guaraná lata"
             price="6.00"
             onClick={() => addToCart("Guaraná lata", 6.0)}
