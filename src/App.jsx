@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; 
+import React, { useEffect } from "react";
 import "./index.css";
 import ScrollReveal from "scrollreveal";
 
@@ -9,7 +9,6 @@ import { useCart } from "./script"; // Corrigido para importar o hook useCart
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
 
 import hamb1 from "./images/hamb-1.png";
 import hamb2 from "./images/hamb-2.png";
@@ -22,7 +21,6 @@ import hamb8 from "./images/hamb-8.png";
 import refri1 from "./images/refri-1.png";
 import refri2 from "./images/refri-2.png";
 import burguer from "./images/burguer.png";
-
 
 const App = () => {
   // Desestruturando o hook useCart para pegar as variáveis e funções necessárias
@@ -37,8 +35,7 @@ const App = () => {
     removeItemFromCart,
     isCartModalOpen,
     isRestaurantOpen,
-    addressWarning
- 
+    addressWarning,
   } = useCart();
 
   useEffect(() => {
@@ -66,9 +63,6 @@ const App = () => {
       distance: "20%",
     });
   }, []); // O array vazio significa que o efeito será executado apenas uma vez quando o componente for montado.
-
-
- 
 
   return (
     <div className="flex items-center flex-col overflow-x-hidden">
@@ -100,17 +94,17 @@ const App = () => {
         Conheça nosso menu
       </h2>
 
-      <div id="menu" className="lg:w-[80%] w-[98%] mb-[80px] pt-[50px] rounded-1xl">
+      <div
+        id="menu"
+        className="lg:w-[80%] w-[98%] mb-[80px] pt-[50px] rounded-1xl"
+      >
         <main className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-12 mx-auto max-w-6xl px-2 mb-16">
           <ProductCardBurguer
-            
             image={hamb1}
             name="Smash Burger Deluxe"
             description="Pão brioche, hambúrguer suculento, queijo cheddar cremoso, bacon crocante e molho especial exclusivo."
             price="21.90"
             onClick={() => addToCart("smash Burguer Deluxe ", 21.9)}
-            
-            
           />
 
           <ProductCardBurguer
@@ -120,7 +114,6 @@ const App = () => {
               exclusivo."
             price="21.90"
             onClick={() => addToCart("Hamburguer Smash", 21.9)}
-          
           />
 
           <ProductCardBurguer
@@ -129,7 +122,6 @@ const App = () => {
             description="Hambúrguer vegetal, queijo vegano, alface crocante, tomate e molho de mostarda e mel."
             price="29.90"
             onClick={() => addToCart("Veggie Delight Burger", 29.9)}
-          
           />
 
           <ProductCardBurguer
@@ -138,7 +130,6 @@ const App = () => {
             description="Hambúrguer artesanal com carne 100% bovina, queijo prato, cebola roxa e molho especial da casa."
             price="30.90"
             onClick={() => addToCart("Burguer da Casa", 30.9)}
-           
           />
 
           <ProductCardBurguer
@@ -147,7 +138,6 @@ const App = () => {
             description="Pão brioche, hambúrguer suculento, queijo cheddar derretido, cebola crocante e molho especial de mostarda."
             price="21.90"
             onClick={() => addToCart("Smash Burger Crispy", 21.9)}
-           
           />
 
           <ProductCardBurguer
@@ -156,7 +146,6 @@ const App = () => {
             description="Dois hambúrgueres grelhados, queijo cheddar, queijo muçarela derretido, bacon crocante e molho barbecue picante."
             price="24.90"
             onClick={() => addToCart("Double Cheese Supreme", 24.9)}
-           
           />
 
           <ProductCardBurguer
@@ -165,7 +154,6 @@ const App = () => {
             description="Hambúrguer de quinoa, abacate cremoso, alface crocante, tomate fresco e molho de limão e ervas."
             price="29.90"
             onClick={() => addToCart("Green Delight Burger", 29.9)}
-           
           />
 
           <ProductCardBurguer
@@ -174,7 +162,6 @@ const App = () => {
             description="Hambúrguer artesanal com carne 100% bovina, queijo cheddar, cogumelos salteados e molho secreto da casa."
             price="30.90"
             onClick={() => addToCart("House Special Burger", 30.9)}
-           
           />
         </main>
 
@@ -193,7 +180,6 @@ const App = () => {
             name="Coca-Cola lata"
             price="6.00"
             onClick={() => addToCart("Coca-Cola lata", 6.0)}
-           
           />
 
           <ProductCardDrink
@@ -201,7 +187,6 @@ const App = () => {
             name="Guaraná lata"
             price="6.00"
             onClick={() => addToCart("Guaraná lata", 6.0)}
-           
           />
         </div>
       </div>
@@ -229,19 +214,19 @@ const App = () => {
           <div className="md:w-[190px] flex md:justify-between w-full justify-end">
             <a href="">
               <button className="cursor-pointer shadow2 w-[50px] h-[50px] bg-amber-100 rounded-4xl md:mr-[20px] md:ml-0 ml-[20px] flex justify-center items-center">
-              <FaWhatsapp className=" text-[25px]"/>
+                <FaWhatsapp className=" text-[25px]" />
               </button>
             </a>
 
             <a href="">
               <button className="cursor-pointer shadow2 w-[50px] h-[50px] bg-amber-100 rounded-4xl md:mr-[20px] md:ml-0 ml-[20px] flex justify-center items-center">
-              <FaInstagram className=" text-[25px]"/>
+                <FaInstagram className=" text-[25px]" />
               </button>
             </a>
 
             <a href="">
               <button className="cursor-pointer shadow2 w-[50px] h-[50px] bg-amber-100 rounded-4xl md:mr-[20px] md:ml-0 ml-[20px] flex justify-center items-center">
-              <FaFacebook className=" text-[25px]" /> 
+                <FaFacebook className=" text-[25px]" />
               </button>
             </a>
           </div>
@@ -275,71 +260,76 @@ const App = () => {
 
       {/* Modal de Carrinho */}
       {isCartModalOpen && (
-      <div
-        className="text-black bg-black/60 w-full h-full fixed top-0
- left-0 z-[99] items-center justify-center flex"
-        id="cart-modal"
-      >
         <div
-          id="cart"
-          className="bg-white p-5 px-8 py-6 rounded-md min-w-[90%] md:min-w-[600px]"
-          
+          className="text-black bg-black/60 w-full h-full fixed top-0
+ left-0 z-[99] items-center justify-center flex"
+          id="cart-modal"
         >
-          <h2 className="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
-          <div className="flex justify-between m-2 flex-col">
-            {cart.map((item, index) => (
-              <div key={index} className="flex justify-between">
-                <span>
-                  {item.name} <br></br>
-                  Qtd: {item.quantity}
-                  <br></br>
-                  R${(item.price * item.quantity).toFixed(2)}
-                </span>
-                <button className="cursor-pointer" onClick={() => removeItemFromCart(item.name)}>
-                  Remover
-                </button>
-              </div>
-            ))}
-          </div>
+          <div
+            id="cart"
+            className="bg-white p-5 px-8 py-6 rounded-md min-w-[90%] md:min-w-[600px]"
+          >
+            <h2 className="text-center font-bold text-2xl mb-2">
+              Meu carrinho
+            </h2>
+            <div className="flex justify-between m-2 flex-col">
+              {cart.map((item, index) => (
+                <div key={index} className="flex justify-between">
+                  <span>
+                    {item.name} <br></br>
+                    Qtd: {item.quantity}
+                    <br></br>
+                    R${(item.price * item.quantity).toFixed(2)}
+                  </span>
+                  <button
+                    className="cursor-pointer"
+                    onClick={() => removeItemFromCart(item.name)}
+                  >
+                    Remover
+                  </button>
+                </div>
+              ))}
+            </div>
 
-          <p className="font-bold">
-            Total: <span id="cart-total">R${cartTotal.toFixed(2)}</span>
-          </p>
+            <p className="font-bold">
+              Total: <span id="cart-total">R${cartTotal.toFixed(2)}</span>
+            </p>
 
-          <p className="font-bold mt-4">Endereço de entrega:</p>
+            <p className="font-bold mt-4">Endereço de entrega:</p>
 
-          <input
-            type="text"
-            placeholder="Digite seu endereço completo..."
-            id="address"
-            value={address}
-            onChange={handleAddressChange}
-            className="w-full border-2 p-1 rounded my-1 border-gray-300"
-          />
-           <p 
-        className={`text-red-500 ${addressWarning ? '' : 'hidden'}`} 
-        id="address-warn"
-      >
-            Digite seu endereço completo!
-          </p>
-
-          <div className="flex items-center justify-between mt-5 w-full">
-            <button
-              id="close-modal-btn" className="cursor-pointer" onClick={handleCartModal}>
-        
-              Fechar
-            </button>
-            <button
-              onClick={handleCheckout}
-              id="checkout-btn"
-              className="cursor-pointer bg-green-500 text-white px-4 py-1 rounded"
-            
+            <input
+              type="text"
+              placeholder="Digite seu endereço completo..."
+              id="address"
+              value={address}
+              onChange={handleAddressChange}
+              className="w-full border-2 p-1 rounded my-1 border-gray-300"
+            />
+            <p
+              className={`text-red-500 ${addressWarning ? "" : "hidden"}`}
+              id="address-warn"
             >
-              Finalizar Pedido
-            </button>
+              Digite seu endereço completo!
+            </p>
+
+            <div className="flex items-center justify-between mt-5 w-full">
+              <button
+                id="close-modal-btn"
+                className="cursor-pointer"
+                onClick={handleCartModal}
+              >
+                Fechar
+              </button>
+              <button
+                onClick={handleCheckout}
+                id="checkout-btn"
+                className="cursor-pointer bg-green-500 text-white px-4 py-1 rounded"
+              >
+                Finalizar Pedido
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       )}
 
       {/* Footer */}
@@ -347,14 +337,13 @@ const App = () => {
         <button
           className="flex cursor-pointer items-center  text-[19px] gap-2 text-white font-bold"
           id="cart-btn"
-          onClick={handleCartModal}>
-       
+          onClick={handleCartModal}
+        >
           (<span id="cart-count">{cart.length}</span>) Ver carrinho
           <i className="fa fa-cart-plus text-lg text-white"></i>
         </button>
       </footer>
     </div>
-  
   );
 };
 

@@ -137,8 +137,6 @@ export const useCart = () => {
       `https://wa.me/${phone}?text=PEDIDO%0A%0A${message}%0AEndereço: ${address}`,
       "_blank"
     );
-
-   
   };
 
   return {
