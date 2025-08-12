@@ -77,7 +77,7 @@ export const useCart = () => {
   const checkRestaurantOpen = () => {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 22; // O restaurante está aberto das 18:00 às 22:00
+    return hora >= 10 && hora < 22; // O restaurante está aberto das 18:00 às 22:00
   };
 
   // UseEffect para definir o status do restaurante
